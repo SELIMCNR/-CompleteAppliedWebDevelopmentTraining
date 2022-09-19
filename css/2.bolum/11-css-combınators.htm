@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p {
+            /*div altındaki tüm p etiketleri*/
+            /*torun elemanlar descendant*/
+            background-color: red;
+        }
+
+        div>p {
+            /*div altındaki yalnız etiketi p olanlar section altındaki p geçerli değil*/
+            /*çoçuk eleman child selector*/
+            background-color: blue;
+        }
+
+        div+p {
+            /*Div etiketi içindekiler değil div etiketten sonra gelen ilk eleman */
+
+            background-color: yellow;
+        }
+
+        div~p {
+
+            /* Div etiketi içindekiler değil div etiketten sonra gelen tüm elemanlar
+          */
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Combinators-->
+
+    <!--1-Descendant selector { torun elemanlar} -->
+    <!--2- Child Selector (>)-->
+    <!--3- Adjacent Sibling Selector(+)--->
+    <!--4- General Sibling Selcetr(~)-->
+    <p>1.paragraf</p>
+    <div>
+        <p>2.paragraf</p>
+        <p>3.paragraf</p>
+        <section>
+            <p>4.paragraf</p>
+        </section>
+    </div>
+    <p>5.paragraf</p>
+</body>
+
+</html>

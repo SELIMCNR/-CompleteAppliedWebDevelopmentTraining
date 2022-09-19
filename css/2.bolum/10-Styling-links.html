@@ -33,13 +33,42 @@
 
         .main-header {
             background-color: #fc997c;
+            padding: 8px 16px;
 
         }
 
         .main-nav {
             display: inline-block;
-            width: calc(100% - 74px);
+            width: calc(100% - 99px);
             text-align: right;
+        }
+
+        .main-nav__items {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .main-nav__item {
+            display: inline-block;
+            margin: 0px 10px;
+            text-decoration: none;
+
+
+        }
+
+        .main-header__logo {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 21px;
+        }
+
+        .main-nav__item a {
+            /*clas içinde a etiketine ulaş*/
+            text-decoration: none;
+            color: #fff;
+
         }
     </style>
 </head>
@@ -47,11 +76,20 @@
 <body>
 
     <header class="main-header">
-        <a href="#">MovieApp</a>
+        <a href="main-header__logo">MovieApp</a>
         <nav class="main-nav">
-            <a href="#">Home</a>
-            <a href="#">Movies</a>
-            <a href="#">Contact</a>
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Movies</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
         </nav>
     </header>
 

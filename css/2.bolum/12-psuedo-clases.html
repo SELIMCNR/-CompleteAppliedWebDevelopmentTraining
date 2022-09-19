@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    a {
+      border: 1px solid gray;
+      padding: 5px 8px;
+      display: inline-block;
+      text-decoration: none;
+      width: 60px;
+      text-align: center;
+    }
+
+    a:link {
+      /*ziyaret edilmemiş link*/
+      color: red;
+    }
+
+    a:visited {
+      /*ziyaret edilmiş link*/
+      color: green;
+    }
+
+    a:hover {
+      /*üzerine gelince*/
+      color: white;
+      background-color: yellow;
+    }
+
+    a:active {
+      /*üzerine tıklanınca*/
+
+      color: white;
+      background-color: violet;
+    }
+
+    div:hover p {
+      /*div etiketine gelince p etiktetini göster*/
+      display: block;
+    }
+
+    p {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Psuedo classes-->
+  <a href="box-model1.html">Home</a>
+  <a href="box-sizing.html">Products</a>
+  <a href="dislplay.html">About</a>
+
+  <div>
+    Click here!
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Deleniti voluptas iusto facilis praesentium ex necessitatibus.
+    </p>
+  </div>
+
+  <!--Psuedo elements-->
+</body>
+
+</html>

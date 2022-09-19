@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line {
+            /*Bütün paragrafların ilk satırını kalın yap*/
+            font-weight: bold;
+            color: brown;
+            word-spacing: 2px;
+            /*kelimeler arası boşluk*/
+            letter-spacing: 1px;
+            /*harfler arası boşluk*/
+        }
+
+        p.about::first-line {
+            /*p.about p element about clası , p .about p eleman altında abut arada boşluğa dikkat et */
+            color: yellow;
+        }
+
+        p::first-letter {
+            /*paragrafların ilk harfini büyük yap*/
+            font-size: 38px;
+        }
+
+        ::selection {
+            /*Elle webi sitesinde seçilen yazıya özellik uygular*/
+            background-color: coral;
+        }
+
+        p::after {
+            /*before paragraftan önce ekle ,after paragraftan sonra ekle*/
+            content: '\261D';
+            /*emoji*/
+            font-size: 35px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Psuedo elements-->
+
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda in nihil animi, voluptate possimus amet
+        nostrum similique! Itaque, ipsa. Dicta hic quasi inventore distinctio odio rem nihil atque impedit tenetur.
+    </p>
+
+    <p class="about">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, pariatur asperiores sunt odit error reiciendis
+        corrupti deserunt explicabo exercitationem consectetur. Deserunt quasi harum magnam nihil consectetur
+        dignissimos tempora sapiente maiores!
+    </p>
+</body>
+
+</html>
